@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpn-shop.github.io/news/article-181248.htm" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V2Ray多用户管理全攻略：从入门到精通的配置指南</title>
+        <meta name="description" content="在当今互联网环境中，隐私保护和网络自由访问已成为许多用户的刚性需求。作为一款功能强大的代理工具，V2Ray凭借其高度的灵活性和安全性赢得了广泛青睐。本文将深入探讨V2Ray的多用户配置方法，帮助您搭建" />
+        <link rel="icon" href="/assets/website/img/vlessnode/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN Shop订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpn-shop.github.io/news/article-181248.htm" />
+    <meta property="og:site_name" content="VPN Shop订阅中文网" />
+    <meta property="og:title" content="V2Ray多用户管理全攻略：从入门到精通的配置指南" />
+    <meta property="og:image" content="https://vpn-shop.github.io/uploads/20240826/4b7d906bb6c5ed893748042fa83d95b6.webp" />
+        <meta property="og:release_date" content="2025-11-26T08:06:37" />
+    <meta property="og:updated_time" content="2025-11-26T08:06:37" />
+        <meta property="og:description" content="在当今互联网环境中，隐私保护和网络自由访问已成为许多用户的刚性需求。作为一款功能强大的代理工具，V2Ray凭借其高度的灵活性和安全性赢得了广泛青睐。本文将深入探讨V2Ray的多用户配置方法，帮助您搭建" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="V2Ray多用户管理全攻略：从入门到精通的配置指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/vlessnode/vendor.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css" />
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0-alpha3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/vlessnode/style.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- script ================================================== -->
+    <script src="/assets/website/js/frontend/vlessnode/modernizr.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSS68K50KJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZSS68K50KJ');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script></head>
+
+<body data-page="detail">
+        <!-- Navigation Section Starts -->
+    <section id="navigation-bar" class="navigation position-fixed">
+        <nav id="navbar-example2" class="navbar navbar-expand-lg ">
+            <div class="navigation container-fluid d-flex flex-wrap align-items-center my-2 pe-4 ps-5 ">
+                <div class="col-md-3 brand-logo">
+                    <a href="/" class="d-inline-flex link-body-emphasis">
+                                        <span>VPN Shop 节点推荐</span>
+                                        </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav align-items-center flex-grow-1">
+                                                        <li class="nav-list mx-3">
+                                <a href="/" class="nav-link px-2">
+                                    <h5> 首页 </h5>
+                                </a>
+                            </li>
+                                                        <li class="nav-list mx-3">
+                                <a href="/free-nodes/" class="nav-link px-2">
+                                    <h5> 免费节点 </h5>
+                                </a>
+                            </li>
+                                                        <li class="nav-list mx-3">
+                                <a href="/paid-subscribe/" class="nav-link px-2">
+                                    <h5> 推荐机场 </h5>
+                                </a>
+                            </li>
+                                                        <li class="nav-list mx-3">
+                                <a href="/client.htm" class="nav-link px-2">
+                                    <h5> 客户端 </h5>
+                                </a>
+                            </li>
+                                                        <li class="nav-list mx-3">
+                                <a href="/news/" class="nav-link px-2">
+                                    <h5> 新闻资讯 </h5>
+                                </a>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Hero Section Starts -->
+    <section id="hero">
+        <div id="resources" class="hero container py-5 my-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                </div>
+                <div class="col-lg-6">
+                    <div class="breadcrumb ">
+                        <span class="item">
+                            <a href="/">
+                                <h5> <u>首页</u> </h5>
+                            </a>
+                        </span>
+                        &nbsp;<h5>/</h5> &nbsp; 
+                        <span class="item">
+                            <a href="/news/">
+                                <h5> <u>新闻资讯</u> </h5>
+                            </a>
+                        </span>
+                        &nbsp;<h5>/</h5> &nbsp; 
+
+                        <span class="item">
+                            <h5>正文</h5>
+                        </span>
+                    </div>
+                    <h1 class=" lh-1 mb-3">V2Ray多用户管理全攻略：从入门到精通的配置指南</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section Starts -->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <input type="hidden" id="share-website-info" data-name="Clash Node免费节点站" data-url="https://clashnode.github.io">
+<div class="xcblog-blog-detail xcblog-blog-detail-defined">
+      <p>在当今互联网环境中，隐私保护和网络自由访问已成为许多用户的刚性需求。作为一款功能强大的代理工具，V2Ray凭借其高度的灵活性和安全性赢得了广泛青睐。本文将深入探讨V2Ray的多用户配置方法，帮助您搭建一个既安全又高效的共享代理环境。</p>  <h2>为什么选择V2Ray作为多用户代理解决方案</h2>  <p>V2Ray之所以能在众多代理工具中脱颖而出，关键在于其卓越的架构设计和丰富的功能特性。相比传统代理工具，V2Ray支持多种传输协议，包括VMess、VLess、Shadowsocks等，能够适应各种复杂的网络环境。其模块化设计使得功能扩展变得轻而易举，而内置的路由功能则可以实现精细化的流量控制。</p>  <p>多用户支持是V2Ray的一大亮点。通过为每个用户分配唯一的UUID标识，管理员可以轻松管理数十甚至上百个用户的连接。这种设计特别适合团队协作、家庭共享或商业运营场景，既能保证资源共享的经济性，又能确保每个用户的独立性和安全性。</p>  <h2>搭建V2Ray多用户系统的完整流程</h2>  <h3>1. 基础环境准备与安装</h3>  <p>在开始配置前，我们需要确保服务器环境准备就绪。推荐使用纯净的Linux系统（如Ubuntu 20.04 LTS或CentOS 8），并确保系统已更新至最新状态。V2Ray的安装过程极为简便，官方提供了一键安装脚本：</p>  <p><code>bash bash &lt;(curl -s -L https://git.io/v2ray.sh)</code></p>  <p>执行此命令后，脚本会自动完成所有依赖项的安装和基础配置。安装完成后，V2Ray服务会自动启动，并设置为开机自启。您可以通过<code>systemctl status v2ray</code>命令验证服务是否正常运行。</p>  <h3>2. 生成与管理用户UUID</h3>  <p>UUID（通用唯一识别码）是V2Ray区分不同用户的核心机制。每个用户必须拥有全球唯一的标识符，这保证了连接的安全性和可追溯性。在Linux系统中，生成UUID非常简单：</p>  <p><code>bash cat /proc/sys/kernel/random/uuid</code></p>  <p>对于需要批量创建用户的情况，可以编写简单的Shell脚本自动生成并记录UUID。建议将生成的UUID与用户信息对应存储，便于后期管理。例如：</p>  <p>```bash</p>  <h1>!/bin/bash  <p>for i in {1..5} do    uuid=$(cat /proc/sys/kernel/random/uuid)    echo "用户$i UUID: $uuid" >> v2ray_users.txt done ```</p>  <h3>3. 深度配置多用户参数</h3>  <p>V2Ray的主配置文件通常位于<code>/etc/v2ray/config.json</code>，我们需要重点修改其中的<code>inbounds</code>部分。以下是一个支持三个用户的标准VMess配置示例：</p>  <p><code>json "inbounds": [   {     "port": 10000,     "protocol": "vmess",     "settings": {       "users": [         {           "id": "USER1_UUID",           "alterId": 64,           "email": "user1@example.com",           "level": 0         },         {           "id": "USER2_UUID",           "alterId": 64,           "email": "user2@example.com",           "level": 0         },         {           "id": "USER3_UUID",           "alterId": 64,           "email": "user3@example.com",           "level": 0         }       ]     }   } ]</code></p>  <p>在这个配置中，我们为每个用户添加了email字段作为备注，level字段则可用于权限分级。alterId参数影响加密强度，数值越大安全性越高但性能消耗也越大，一般推荐设置在64左右。</p>  <h3>4. 高级用户管理技巧</h3>  <p>对于更复杂的场景，V2Ray支持通过API动态管理用户。首先需要在配置文件中启用API功能：</p>  <p><code>json "api": {   "tag": "api",   "services": [     "HandlerService",     "LoggerService",     "StatsService"   ] }</code></p>  <p>然后添加一个专门用于API通信的inbound：</p>  <p><code>json "inbounds": [   {     "listen": "127.0.0.1",     "port": 10050,     "protocol": "dokodemo-door",     "settings": {       "address": "127.0.0.1"     },     "tag": "api"   } ]</code></p>  <p>配置完成后，您可以使用v2ctl工具或编写脚本通过gRPC接口动态添加/删除用户，无需每次修改配置文件后重启服务。</p>  <h2>性能优化与安全加固</h2>  <h3>1. 流量控制策略</h3>  <p>在多用户环境中，合理分配带宽资源至关重要。V2Ray支持为每个用户设置独立的流量策略：</p>  <p><code>json "policy": {   "levels": {     "0": {       "handshake": 4,       "connIdle": 300,       "uplinkOnly": 2,       "downlinkOnly": 5     }   },   "system": {     "statsInboundUplink": true,     "statsInboundDownlink": true   } }</code></p>  <p>通过上述配置，我们可以限制每个用户的连接空闲时间、握手次数等参数。结合StatsService，还能实现精确的流量统计和配额管理。</p>  <h3>2. 传输层优化</h3>  <p>V2Ray支持多种传输协议，针对不同网络环境选择合适的协议能显著提升性能。例如，在TCP连接不稳定的环境中，可以考虑使用mKCP协议：</p>  <p><code>json "streamSettings": {   "network": "kcp",   "kcpSettings": {     "mtu": 1350,     "tti": 20,     "uplinkCapacity": 5,     "downlinkCapacity": 100,     "congestion": false,     "readBufferSize": 1,     "writeBufferSize": 1,     "header": {       "type": "dtls"     }   } }</code></p>  <h3>3. 安全防护措施</h3>  <p>多用户系统面临更高的安全风险，必须采取额外防护：</p>  <ol> <li><strong>端口隐藏</strong>：使用非标准端口并结合防火墙限制访问IP</li> <li><strong>TLS加密</strong>：为所有传输启用TLS加密，防止流量分析</li> <li><strong>动态端口</strong>：配置端口动态变化，增加追踪难度</li> <li><strong>访问控制</strong>：设置白名单或黑名单，限制特定用户的访问权限</li> </ol>  <p><code>json "inbounds": [   {     "port": 10000,     "protocol": "vmess",     "settings": {       "clients": [         {           "id": "USER1_UUID",           "alterId": 64         }       ],       "disableInsecureEncryption": true     },     "streamSettings": {       "network": "tcp",       "security": "tls",       "tlsSettings": {         "certificates": [           {             "certificateFile": "/etc/v2ray/v2ray.crt",             "keyFile": "/etc/v2ray/v2ray.key"           }         ]       }     }   } ]</code></p>  <h2>实战场景应用分析</h2>  <h3>1. 企业团队协作方案</h3>  <p>对于10-20人的技术团队，建议采用以下架构： - 主服务器部署在海外优质机房 - 为每个部门分配不同的alterId等级 - 设置部门级流量配额 - 启用详细日志记录但定期清理</p>  <p>典型配置可能包括： - 工作日限制每个用户每日10GB流量 - 周末放宽至20GB - 关键部门（如研发）享有更高优先级</p>  <h3>2. 家庭共享网络方案</h3>  <p>家庭用户更注重简单易用和稳定性： - 为每个家庭成员创建独立账号 - 为孩子设备设置访问限制（如屏蔽不良网站） - 为流媒体设备分配更高带宽 - 使用DNS缓存加速常用网站</p>  <p>路由配置示例： <code>json "routing": {   "rules": [     {       "type": "field",       "domains": ["geosite:adult"],       "outboundTag": "block"     },     {       "type": "field",       "domains": ["geosite:netflix"],       "clients": ["USER3_UUID"],       "outboundTag": "direct"     }   ] }</code></p>  <h2>常见问题深度解析</h2>  <p><strong>Q：如何实现用户流量配额管理？</strong></p>  <p>A：V2Ray本身不提供完整的流量统计功能，但可以通过以下方案实现： 1. 使用StatsService获取基础数据 2. 结合Prometheus和Grafana搭建监控系统 3. 开发脚本定期检查并自动禁用超额用户</p>  <p><strong>Q：多用户环境下如何保证服务质量？</strong></p>  <p>A：关键策略包括： - 为不同用户设置优先级（通过level参数） - 限制单个用户的并发连接数 - 启用BBR等TCP加速算法 - 定期分析使用模式优化路由规则</p>  <p><strong>Q：如何快速排查连接问题？</strong></p>  <p>A：系统化的排查步骤： 1. 检查客户端和服务端UUID是否匹配 2. 验证时间同步（误差需在90秒内） 3. 查看V2Ray日志<code>journalctl -u v2ray -n 50 -f</code> 4. 测试端口连通性<code>telnet server_ip 10000</code> 5. 检查防火墙规则<code>iptables -L -n</code></p>  <h2>技术点评与未来展望</h2>  <p>V2Ray的多用户管理系统展现出了令人印象深刻的设计哲学。其基于UUID的认证机制既保证了安全性，又提供了极大的灵活性。配置文件的结构化设计使得复杂策略的表达变得直观，而API接口则为自动化管理打开了大门。</p>  <p>然而，当前系统仍存在一些值得改进之处。用户管理界面相对原始，依赖手动编辑JSON文件对新手不够友好。流量统计功能较为基础，缺乏直观的可视化工具。权限控制系统虽然存在，但粒度还不够细致。</p>  <p>展望未来，我们期待V2Ray在以下方面继续发展： 1. 集成Web管理界面，降低使用门槛 2. 增强内置的流量分析和限制功能 3. 支持更细粒度的访问控制策略 4. 优化多协议下的统一管理体验</p>  <p>无论怎样，V2Ray目前已是开源代理工具中的佼佼者，其多用户支持功能足以满足从个人开发者到中小企业的各种需求。通过本文介绍的方法和技巧，您应该能够构建出既强大又灵活的共享代理环境。记住，技术本身是中性的，关键在于我们如何使用它——始终遵守当地法律法规，将技术用于正当用途，才是长久之计。</p> </div>
+<div class="clearfix"></div>
+<div class="col-md-12 mt-5">
+        <p>上一个：<a href="/news/article-180860.htm">K2P荒野无灯：科学上网的最佳选择与安装配置全解析</a></p>
+        <p>下一个：<a href="/news/article-181650.htm">彻底告别Clash for Windows：一份详尽的卸载指南与深度解析</a></p>
+    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-182445.htm" title="小纸船科学上网全攻略：从原理到实战的完整指南">小纸船科学上网全攻略：从原理到实战的完整指南</a></li>
+                        <li class="py-2"><a href="/news/article-178485.htm" title="安卓设备上Clash代理工具的终极使用指南：从入门到精通">安卓设备上Clash代理工具的终极使用指南：从入门到精通</a></li>
+                        <li class="py-2"><a href="/news/article-176532.htm" title="突破网络枷锁：iOS越狱设备科学上网全攻略">突破网络枷锁：iOS越狱设备科学上网全攻略</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-2-clash-node.htm" title="VPN Shop | 12月2日18.8M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 12月2日18.8M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点节点推荐，在线VPN机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/news/article-179663.htm" title="11月最新v2rayng免费节点完全指南：从获取到安全使用的终极攻略">11月最新v2rayng免费节点完全指南：从获取到安全使用的终极攻略</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-30-clash-node.htm" title="VPN Shop | 11月30日20.4M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 11月30日20.4M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点节点推荐，在线VPN机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/news/article-176093.htm" title="全面解析《Clash Githu》：从入门到精通的多协议代理工具指南">全面解析《Clash Githu》：从入门到精通的多协议代理工具指南</a></li>
+                        <li class="py-2"><a href="/news/article-176921.htm" title="掌握节点延时，解锁Quantumult的极速网络体验">掌握节点延时，解锁Quantumult的极速网络体验</a></li>
+                        <li class="py-2"><a href="/news/article-176135.htm" title="突破网络边界：Mac用户畅游YouTube的科学上网全攻略">突破网络边界：Mac用户畅游YouTube的科学上网全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-179270.htm" title="黑莓Q5突破网络限制全攻略：从VPN到代理的完整科学上网指南">黑莓Q5突破网络限制全攻略：从VPN到代理的完整科学上网指南</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2025-12/" title="2025-12 归档">2025-12</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="footer-2">
+        <footer class="container footer-2-container  d-flex align-items-center">
+            <div class="col-md-4 d-flex justify-content-center justify-content-md-start">
+                <p class="footer2-paragraph">© All rights reserved.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="#" class="text-decoration-none">
+                    <iconify-icon class="footer-2-icon px-2" icon="ri:facebook-fill"></iconify-icon>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <iconify-icon class="footer-2-icon px-2" icon="ri:twitter-fill"></iconify-icon>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <iconify-icon class="footer-2-icon px-2" icon="ri:instagram-fill"></iconify-icon>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <p class="footer2-paragraph d-flex justify-content-center justify-content-md-end">
+                                        <p>本站内容仅供学习与技术研究用途，无意传播或倡导任何违反法律法规的行为。在此声明：用户须自行了解所在地法律法规，合法合规使用；因使用不当产生的法律责任，与本站及作者无关；请在使用前仔细阅读本声明，继续使用即视为同意以上条款。</p>
+                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                                        VPN Shop订阅中文网 版权所有 Powered by WordPress
+                </p>
+            </div>
+        </footer>
+    </section>
+    <!-- Scripts  Starts -->
+    <script src="/assets/website/js/frontend/vlessnode/jquery-3.5.1.min.js"></script>
+    <script src="/assets/website/js/frontend/vlessnode/plugins.js"></script>
+    <script src="/assets/website/js/frontend/vlessnode/script.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0-alpha3/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
