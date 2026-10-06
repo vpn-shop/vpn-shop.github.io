@@ -335,14 +335,9 @@ Quantumult有多个版本，例如Quantumult 和 Quantumult X，选择符合自�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 模式在高并发下有什么优势？</h5></div>
+    <div class="panel-heading"><h5>Netch 无法代理游戏怎么办？</h5></div>
     <div class="panel-body">
-        XTLS 模式减少握手次数和加密冗余，提高 CPU 利用率和吞吐量。在高并发场景下能保持连接稳定，适合游戏、流媒体和频繁请求的网络环境，提升整体性能。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 如何通过节点测速选择最优线路？</h5></div>
-    <div class="panel-body">
-        Matsuri 会定期测速节点延迟和丢包率，结合策略组自动选择延迟低、稳定性高的节点。这样可以提升网页、视频和游戏访问速度，减少掉线和卡顿，优化整体体验。<hr />    </div>
+        若 Netch 无法代理游戏，需检查游戏进程是否被正确捕获，以及防火墙是否阻止了 TUN 模式。可尝试以管理员身份运行程序，或切换为 Socks 模式重新导入节点。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的协议插件如何应对封锁？</h5></div>
@@ -350,9 +345,14 @@ Quantumult有多个版本，例如Quantumult 和 Quantumult X，选择符合自�
         协议插件可隐藏真实通信特征，将流量伪装成正常 HTTP 或 TLS 数据。结合混淆方式使用，可以有效降低被 DPI 检测或封锁的风险，提高节点稳定性和长期可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 无法代理游戏怎么办？</h5></div>
+    <div class="panel-heading"><h5>如何将 Windows 上的 V2Ray 与 WSL 环境联合调试？</h5></div>
     <div class="panel-body">
-        若 Netch 无法代理游戏，需检查游戏进程是否被正确捕获，以及防火墙是否阻止了 TUN 模式。可尝试以管理员身份运行程序，或切换为 Socks 模式重新导入节点。<hr />    </div>
+        在 WSL 内运行需要的调试工具并通过 localhost 或将 V2Ray 监听地址绑定为 0.0.0.0，然后在 Windows 与 WSL 之间配置端口映射。注意 Windows 防火墙规则需允许 WSL 与 Windows 进程通信。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Matsuri 如何通过节点测速选择最优线路？</h5></div>
+    <div class="panel-body">
+        Matsuri 会定期测速节点延迟和丢包率，结合策略组自动选择延迟低、稳定性高的节点。这样可以提升网页、视频和游戏访问速度，减少掉线和卡顿，优化整体体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 是否比 Clash 更省资源？</h5></div>
@@ -360,29 +360,29 @@ Quantumult有多个版本，例如Quantumult 和 Quantumult X，选择符合自�
         Sing-box 在性能优化上比 Clash 更出色。它采用 Go 语言重构核心模块，并对并发模型进行了优化，内存占用更低，启动速度更快，适合低配置设备或嵌入式环境。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 的广告屏蔽原理是什么？</h5></div>
-    <div class="panel-body">
-        QuantumultX 使用分流规则与脚本结合的方式实现广告屏蔽。通过重写 HTTP 请求和阻止特定域名，它能有效去除 App 内广告或网页弹窗，提升浏览体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何将 Windows 上的 V2Ray 与 WSL 环境联合调试？</h5></div>
-    <div class="panel-body">
-        在 WSL 内运行需要的调试工具并通过 localhost 或将 V2Ray 监听地址绑定为 0.0.0.0，然后在 Windows 与 WSL 之间配置端口映射。注意 Windows 防火墙规则需允许 WSL 与 Windows 进程通信。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 的多节点分流如何设置？</h5></div>
     <div class="panel-body">
         可通过策略组定义不同节点用途和优先级，结合规则文件将特定域名、IP 或端口流量分流至相应节点，实现游戏、视频或网页加速，并优化整体网络性能和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray QUIC 传输适合什么网络环境？</h5></div>
+    <div class="panel-heading"><h5>VLESS + XTLS 模式在高并发下有什么优势？</h5></div>
     <div class="panel-body">
-        QUIC 基于 UDP 支持多路复用和零握手，降低延迟，提高吞吐量。适合高丢包、不稳定网络环境，可保证视频、游戏和即时通讯流量的稳定性和流畅体验。<hr />    </div>
+        XTLS 模式减少握手次数和加密冗余，提高 CPU 利用率和吞吐量。在高并发场景下能保持连接稳定，适合游戏、流媒体和频繁请求的网络环境，提升整体性能。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>QuantumultX 的广告屏蔽原理是什么？</h5></div>
+    <div class="panel-body">
+        QuantumultX 使用分流规则与脚本结合的方式实现广告屏蔽。通过重写 HTTP 请求和阻止特定域名，它能有效去除 App 内广告或网页弹窗，提升浏览体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 混淆方式如何增强隐蔽性？</h5></div>
     <div class="panel-body">
-        选择合适混淆方式，如 tls1.2_ticket_auth，可模拟 HTTPS 流量。合理搭配协议和混淆参数，提高节点稳定性和抗封锁能力，确保长期科学上网体验顺畅。    </div>
+        选择合适混淆方式，如 tls1.2_ticket_auth，可模拟 HTTPS 流量。合理搭配协议和混淆参数，提高节点稳定性和抗封锁能力，确保长期科学上网体验顺畅。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray QUIC 传输适合什么网络环境？</h5></div>
+    <div class="panel-body">
+        QUIC 基于 UDP 支持多路复用和零握手，降低延迟，提高吞吐量。适合高丢包、不稳定网络环境，可保证视频、游戏和即时通讯流量的稳定性和流畅体验。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -430,16 +430,16 @@ Quantumult有多个版本，例如Quantumult 和 Quantumult X，选择符合自�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-8-15.htm" title="VPN Shop | 8月15日19.8M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 8月15日19.8M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-8-7.htm" title="VPN Shop | 8月7日19.1M/S|免费Clash节点/SSR节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 8月7日19.1M/S|免费Clash节点/SSR节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-8-25.htm" title="VPN Shop | 8月25日19M/S|免费V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 8月25日19M/S|免费V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-8-27.htm" title="VPN Shop | 8月27日19.5M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点/Clash节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 8月27日19.5M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点/Clash节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-12-clash-v2ray-ss-ssr.htm" title="VPN Shop | 9月12日20.3M/S|免费Singbox节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月12日20.3M/S|免费Singbox节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-9-29.htm" title="VPN Shop | 9月29日21.9M/S|免费SSR节点/V2ray节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月29日21.9M/S|免费SSR节点/V2ray节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-8-clash-node-daily-updates.htm" title="VPN Shop | 9月8日19.4M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月8日19.4M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-9-17.htm" title="VPN Shop | 9月17日21.7M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月17日21.7M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-14-clash-v2ray-ss-ssr.htm" title="VPN Shop | 9月14日20.7M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月14日20.7M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-9-27.htm" title="VPN Shop | 9月27日18.7M/S|免费Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月27日18.7M/S|免费Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-18-free-v2ray.htm" title="VPN Shop | 9月18日18.2M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Trojan节点/Singbox节点/Clash节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月18日18.2M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Trojan节点/Singbox节点/Clash节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-10-3.htm" title="VPN Shop | 10月3日18.6M/S|免费Singbox节点/Trojan节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 10月3日18.6M/S|免费Singbox节点/Trojan节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-9-23.htm" title="VPN Shop | 9月23日21.3M/S|免费Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月23日21.3M/S|免费Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-2-free-node-subscribe.htm" title="VPN Shop | 10月2日21.4M/S|免费SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 10月2日21.4M/S|免费SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-22-node-share.htm" title="VPN Shop | 9月22日22.5M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月22日22.5M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-10-1.htm" title="VPN Shop | 10月1日22.1M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/SSR节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 10月1日22.1M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/SSR节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-9-9.htm" title="VPN Shop | 9月9日21.4M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月9日21.4M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-9-15.htm" title="VPN Shop | 9月15日19.4M/S|免费Clash节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月15日19.4M/S|免费Clash节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-10-5.htm" title="VPN Shop | 10月5日18.4M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 10月5日18.4M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-10-clash-node-daily-updates.htm" title="VPN Shop | 9月10日21.3M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/SSR节点节点推荐，在线VPN机场梯子购买推荐">VPN Shop | 9月10日21.3M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/SSR节点节点推荐，在线VPN机场梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -451,10 +451,10 @@ Quantumult有多个版本，例如Quantumult 和 Quantumult X，选择符合自�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                     </ul>
     </div>
