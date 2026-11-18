@@ -1,4 +1,4 @@
-# VPN Shop | 11月11日19.1M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点节点推荐，在线VPN机场梯子购买推荐  更新时间 2026-11-11 09:50:11
+# VPN Shop | 11月18日18.2M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点节点推荐，在线VPN机场梯子购买推荐  更新时间 2026-11-18 11:44:04
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpn-shop.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://vpn-shop.github.io/uploads/2026/11/0-20261111.yaml
-- https://vpn-shop.github.io/uploads/2026/11/1-20261111.yaml
-- https://vpn-shop.github.io/uploads/2026/11/2-20261111.yaml
-- https://vpn-shop.github.io/uploads/2026/11/3-20261111.yaml
-- https://vpn-shop.github.io/uploads/2026/11/4-20261111.yaml
+- https://vpn-shop.github.io/uploads/2026/11/0-20261118.yaml
+- https://vpn-shop.github.io/uploads/2026/11/1-20261118.yaml
+- https://vpn-shop.github.io/uploads/2026/11/2-20261118.yaml
+- https://vpn-shop.github.io/uploads/2026/11/3-20261118.yaml
+- https://vpn-shop.github.io/uploads/2026/11/4-20261118.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://vpn-shop.github.io/uploads/2026/11/0-20261111.txt
-- https://vpn-shop.github.io/uploads/2026/11/1-20261111.txt
-- https://vpn-shop.github.io/uploads/2026/11/2-20261111.txt
-- https://vpn-shop.github.io/uploads/2026/11/3-20261111.txt
-- https://vpn-shop.github.io/uploads/2026/11/4-20261111.txt
+- https://vpn-shop.github.io/uploads/2026/11/0-20261118.txt
+- https://vpn-shop.github.io/uploads/2026/11/1-20261118.txt
+- https://vpn-shop.github.io/uploads/2026/11/2-20261118.txt
+- https://vpn-shop.github.io/uploads/2026/11/3-20261118.txt
+- https://vpn-shop.github.io/uploads/2026/11/4-20261118.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://vpn-shop.github.io/uploads/2026/11/20261111.json
+- https://vpn-shop.github.io/uploads/2026/11/20261118.json
 
 ## 更多Clash节点订阅 ：
 
